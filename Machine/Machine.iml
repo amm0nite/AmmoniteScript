@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Lexer" />
+    <orderEntry type="module" module-name="Assembler" />
+    <orderEntry type="module" module-name="Compiler" />
+    <orderEntry type="module" module-name="Program" />
+    <orderEntry type="module-library">
+      <library name="com.rabbitmq:amqp-client:4.0.0" type="repository">
+        <properties maven-id="com.rabbitmq:amqp-client:4.0.0" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../Vendor/amqp-client-4.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Vendor/slf4j-api-1.7.21.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../Vendor/amqp-client-4.0.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="com.google.code.gson:gson:2.8.0" type="repository">
+        <properties maven-id="com.google.code.gson:gson:2.8.0" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../Vendor/gson-2.8.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../Vendor/gson-2.8.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-codec:commons-codec:1.10" type="repository">
+        <properties maven-id="commons-codec:commons-codec:1.10" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../Vendor/commons-codec-1.10.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../Vendor/commons-codec-1.10-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="com.beust:jcommander:1.58" type="repository">
+        <properties maven-id="com.beust:jcommander:1.58" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../Vendor/jcommander-1.58.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../Vendor/jcommander-1.58-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

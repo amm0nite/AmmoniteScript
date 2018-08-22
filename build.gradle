@@ -1,0 +1,57 @@
+plugins {
+  id 'java'
+  id 'com.github.johnrengelman.shadow' version '1.2.4'
+}
+
+apply plugin: 'java'
+buildDir = 'Build'
+
+sourceSets {
+    main {
+        java {
+            srcDir 'Lexer/src'
+            srcDir 'Assembler/src'
+            srcDir 'Compiler/src'
+            srcDir 'Program/src'
+            srcDir 'Machine/src'
+        }
+    }
+    test {
+        java {
+            srcDir 'Lexer/test'
+            srcDir 'Assembler/test'
+            srcDir 'Compiler/test'
+            srcDir 'Program/test'
+            srcDir 'Machine/test'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.0'
+    compile group: 'com.rabbitmq', name: 'amqp-client', version: '4.0.0'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+    compile group: 'com.beust', name: 'jcommander', version:'1.58'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+sourceCompatibility = 1.8
+//version = new Date().format('yyyy.MM.dd')
+// or use a properties file
+//echo "version=0.2.0" > gradle.properties
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'AmmoniteScript',
+                   //'Implementation-Version': version,
+                   'Main-Class': 'fr.ambox.machine.CommandLine'
+    }
+}
+
+shadowJar {
+    dependsOn(build)
+}
